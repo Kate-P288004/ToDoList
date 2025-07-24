@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.Diagnostics;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -29,5 +30,16 @@ namespace ToDoList
                 HomeInput.Clear();
             }
         }
+
+        private void AddTafeTask_Click(object sender, RoutedEventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(TafeInput.Text))
+            {
+                TafeList.Items.Add( TafeInput.Text);
+                TafeInput.Clear();
+            }
+        }
+
+
     }
 }
