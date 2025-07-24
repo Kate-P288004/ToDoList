@@ -46,7 +46,7 @@ namespace CuteToDoApp
         {
             RemoveCheckedItems(HobbyList);
         }
-        // Helper: Create Checkbox
+        
         private CheckBox CreateCheckBox(string text)
         {
             return new CheckBox
@@ -56,7 +56,6 @@ namespace CuteToDoApp
                 Margin = new Thickness(2)
             };
         }
-        // Helper: Remove checked items from list
         private void RemoveCheckedItems(ListBox listBox)
         {
             for (int i = listBox.Items.Count - 1; i >= 0; i--)

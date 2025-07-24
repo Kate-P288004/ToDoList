@@ -1,7 +1,7 @@
 ﻿<Window x:Class="CuteToDoApp.MainWindow"
        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-       Title="My Cute To-Do List" Height="600" Width="400"
+       Title="To-Do List" Height="600" Width="400"
        Background="LavenderBlush">
     <ScrollViewer VerticalScrollBarVisibility="Auto">
         <StackPanel Margin="10">
