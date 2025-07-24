@@ -18,7 +18,7 @@ namespace CuteToDoApp
             }
         }
         private void AddTafeTask_Click(object sender, RoutedEventArgs e)
-        {
+        { v
             if (!string.IsNullOrWhiteSpace(TafeInput.Text))
             {
                 TafeList.Items.Add(CreateCheckBox(TafeInput.Text));
