@@ -1,0 +1,50 @@
+﻿<Window x:Class="CuteToDoApp.MainWindow"
+
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+
+        Title="🌸 My To-Do List" Height="600" Width="400"
+
+        Background="LavenderBlush">
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <StackPanel Margin="10">
+            <TextBlock Text="✨ To-Do List ✨" 
+
+                       FontSize="28" FontWeight="Bold" Foreground="HotPink" 
+
+                       HorizontalAlignment="Center" Margin="10"/>
+            <!-- HOME Section -->
+            <Expander Header="🏠 Home Tasks" IsExpanded="True" Margin="0,5">
+                <StackPanel>
+                    <ListBox Name="HomeList" Margin="5" Background="MistyRose"/>
+                    <StackPanel Orientation="Horizontal" Margin="5">
+                        <TextBox Name="HomeInput" Width="200" Height="25" FontSize="14"/>
+                        <Button Content="Add" Click="AddHomeTask_Click" Background="LightPink" Margin="5,0"/>
+                    </StackPanel>
+                </StackPanel>
+            </Expander>
+            <!-- TAFE Study Section -->
+            <Expander Header="📚 TAFE Study" IsExpanded="True" Margin="0,5">
+                <StackPanel>
+                    <ListBox Name="TafeList" Margin="5" Background="Lavender"/>
+                    <StackPanel Orientation="Horizontal" Margin="5">
+                        <TextBox Name="TafeInput" Width="200" Height="25" FontSize="14"/>
+                        <Button Content="Add" Click="AddTafeTask_Click" Background="Thistle" Margin="5,0"/>
+                    </StackPanel>
+                </StackPanel>
+            </Expander>
+            <!-- Hobby & Pet Section -->
+            <Expander Header="Hobby and Pet" IsExpanded="True" Margin="0,5">
+                <StackPanel>
+                    <ListBox Name="HobbyList" Margin="5" Background="Honeydew"/>
+                    <StackPanel Orientation="Horizontal" Margin="5">
+                        <TextBox Name="HobbyInput" Width="200" Height="25" FontSize="14"/>
+                        <Button Content="Add" Click="AddHobbyTask_Click" Background="LightGreen" Margin="5,0"/>
+                    </StackPanel>
+                </StackPanel>
+            </Expander>
+        </StackPanel>
+    </ScrollViewer>
+</Window>
+ 
