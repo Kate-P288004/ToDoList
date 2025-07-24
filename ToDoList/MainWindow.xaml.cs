@@ -39,7 +39,14 @@ namespace ToDoList
                 TafeInput.Clear();
             }
         }
-
+        private void AddHobbyTask_Click(object sender, RoutedEventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(HobbyInput.Text))
+            {
+                HobbyList.Items.Add( HobbyInput.Text);
+                HobbyInput.Clear();
+            }
+        }
 
     }
 }
