@@ -20,5 +20,14 @@ namespace ToDoList
         {
             InitializeComponent();
         }
+
+        private void AddHomeTask_Click(object sender, RoutedEventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(HomeInput.Text))
+            {
+                HomeList.Items.Add( HomeInput.Text);
+                HomeInput.Clear();
+            }
+        }
     }
 }
